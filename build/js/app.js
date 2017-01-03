@@ -18,10 +18,10 @@ exports.simonModule = Game;
 },{}],2:[function(require,module,exports){
 var Simon = require('./../js/script.js').simonModule;
 
-$(document).ready(function(event) {
+$(document).ready(function() {
+  var game = new Simon();
   $('.panel').on('click', function() {
     var clicked = $(this).attr("value");
-    var game = new Simon();
     var clickedPanel = game.UserClicks(clicked);
     console.log(clicked);
   });
