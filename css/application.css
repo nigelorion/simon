@@ -1,0 +1,36 @@
+body {
+  display: flex;
+}
+
+.board {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  height: 1000px;
+  width: 1000px;
+  flex-wrap: wrap;
+}
+.panel {
+  flex-basis: 44%;
+  flex-shrink: 1;
+  margin: 2%;
+}
+.panel:hover {
+  filter: grayscale(20%);
+}
+
+.panel:active {
+  filter: grayscale(80%);
+}
+.one {
+  background-color: red;
+}
+.two {
+  background-color: blue;
+}
+.three {
+  background-color: orange;
+}
+.four {
+  background-color: green;
+}
